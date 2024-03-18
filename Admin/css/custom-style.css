@@ -1,0 +1,25 @@
+/* custom-style */
+.box-extra-photo-edit {
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+.box-extra-photo-edit span {
+    position: absolute;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    top: 0%;
+    right: -10%;
+    border-radius: 50%;
+    background: red;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.daterange {
+    padding: 4px 8px;
+    margin-bottom: 10px;
+}

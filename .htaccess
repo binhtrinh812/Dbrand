@@ -1,0 +1,22 @@
+RewriteEngine On
+
+RewriteRule "trang-chu" "index.php"
+
+RewriteRule "^([a-zA-Z0-9]+).html$" "index.php?page=$1"
+
+RewriteRule "danh-muc" "category.html"
+RewriteRule "gioi-thieu" "introduce.html"
+RewriteRule "lien-he" "contact.html"
+RewriteRule "tin-tuc" "news.html"
+RewriteRule "gio-hang" "cart.html"
+RewriteRule "thanh-cong" "success.html"
+
+RewriteRule "^san-pham/([a-z]+)/([0-9]+).html$" "index.php?page=product&method=$1&nav=$2"
+
+RewriteRule "san-pham/giay-tay/([0-9]+)" "san-pham/western/$1.html"
+RewriteRule "san-pham/giay-luoi/([0-9]+)" "san-pham/lazy/$1.html"
+
+
+RewriteRule "^san-pham/([0-9]+)/([a-zA-Z0-9-]+)" "index.php?page=product&id=$1&name=$2"
+
+
